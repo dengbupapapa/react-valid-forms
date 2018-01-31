@@ -1,0 +1,22 @@
+@import '~@less/mixins.less';
+
+.react-validate-forms-container{
+    .px2px(padding,5px);
+    position: relative;
+    background: #fff;
+    .react-validate-forms-input{
+        width: 100%;
+        outline: none;
+        &.error{
+            border:solid 1px red;
+        }
+    }
+    .react-validate-forms-error{
+        .px2px(padding-right,10px);
+        position: absolute;
+        top: 50%;
+        right:0;
+        transform: translateY(-50%);
+        color:red;
+    }
+}
